@@ -1,0 +1,35 @@
+@mixin key-length ($width) {
+    width: $width;
+}
+
+#Backspace {
+    @include key-length(174px);
+}
+
+#Tab {
+    @include key-length(125px);
+}
+
+#Backslash {
+    @include key-length(135px);
+}
+
+#CapsLock {
+    @include key-length(158px);
+}
+
+#Enter {
+    @include key-length(190px);
+}
+
+#ShiftLeft {
+    @include key-length(190px);
+}
+
+#ShiftRight {
+    @include key-length(158px);
+}
+
+#Space {
+    @include key-length(614px);
+}

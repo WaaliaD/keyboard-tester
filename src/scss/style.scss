@@ -1,0 +1,88 @@
+@import 'normalize.css';
+@import 'variables.scss';
+@import 'custom-keys.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'DM+Sans', Arial, sans-serif;;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $background;
+
+    #keyboard {
+        display: inline;
+        width: 1468px;
+        height: 500px;
+        border: 30px solid $color-primary;
+        border-radius: 5px;
+        background-color: $color-keyboard-background;
+    }
+
+    #toolbar {
+        width: 400px;
+        height: 250px;
+        overflow: auto;
+        border: 3px solid $color-primary;
+        border-radius: 5px;
+        background-color: aliceblue;
+        font-size: 20px;
+        line-height: 20px;
+        color: $color-secondary;
+
+        #button {
+            display: block;
+            float: right;
+            width: 86px;
+            height: 64px;
+            margin: 5px;
+            line-height: 64px;
+            border: 1px solid $color-secondary;
+            border-radius: 10px;
+            text-align: center;
+            color: $color-fonts;
+            background-color: $color-primary;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            outline: 3px ridge $color-secondary;
+            border-radius: 10px;
+        }
+    }
+}
+
+.key {
+    float: left;
+    width: 86px;
+    height: 86px;
+    margin: 1px;
+    line-height: 80px;
+    border: 1px solid $color-secondary;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: $color-fonts;
+    background-color: $color-primary;
+}
+
+.secondary-color {
+    background-color: $color-secondary
+}
+
+.afteractive {
+    color: $color-after-active;
+    background-color: $color-after-active-bg;
+}
+
+.active {
+    color: $color-active;
+    background-color: $color-active-bg;
+}
